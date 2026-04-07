@@ -347,7 +347,7 @@ class Ui_MainWindow(object):
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"3", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"2", None))
         self.label_1.setText(QCoreApplication.translate("MainWindow", u"1", None))
-        self.btn_Confirmar.setText(QCoreApplication.translate("MainWindow", u"Confirmar", None))
+        self.btn_Confirmar.setText(QCoreApplication.translate("MainWindow", u"Desistir", None))
         self.graphicsView.setStyleSheet(QCoreApplication.translate("MainWindow", u"background-color: #3b3b3b; border: 1px solid #555555;", None))
     # retranslateUi
 

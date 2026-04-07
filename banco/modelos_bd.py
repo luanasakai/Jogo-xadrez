@@ -16,8 +16,10 @@ class Partida(Base):
     turno_atual = Column(String(10), default="brancas")
 
 
-URL_BASE_DADOS = 'mysql+pymysql://avnadmin:AVNS_E3bxwaNSVrU_t8UwOQU@xadrez-pyqt-xadrez-pyqt.g.aivencloud.com:22586/defaultdb?ssl-mode=REQUIRED'
-engine = create_engine(URL_BASE_DADOS)
+URL_BASE_DADOS = 'mysql+pymysql://avnadmin:AVNS_E3bxwaNSVrU_t8UwOQU@xadrez-pyqt-xadrez-pyqt.g.aivencloud.com:22586/defaultdb'
+#se for testar, avisa pra eu ligar o servidor
+
+engine = create_engine(URL_BASE_DADOS, connect_args={'ssl': {}})
 
 Base.metadata.create_all(engine)
 
@@ -25,7 +27,8 @@ Session = sessionmaker(bind=engine)
 sessao = Session()
 
 if __name__ == "__main__":
-    nova_partida = Partida(jogador_brancas="Wille", jogador_pretas="Luana")
+    nova_partida = Partida(jogador_brancas=None, jogador_pretas=None)
     sessao.add(nova_partida)
     sessao.commit()
-    print("Nova partida criada com sucesso na base de dados!")
+
+    print(f"Nova partida criada com sucesso! O ID dela é: {nova_partida.id}")

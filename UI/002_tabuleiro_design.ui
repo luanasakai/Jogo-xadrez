@@ -127,7 +127,7 @@ QLineEdit { background: transparent; color: #cccccc; border: none; font-size: 14
    <widget class="QPushButton" name="btn_Confirmar">
     <property name="geometry"><rect><x>630</x><y>50</y><width>91</width><height>81</height></rect></property>
     <property name="cursor"><cursorShape>PointingHandCursor</cursorShape></property>
-    <property name="text"><string>Confirmar</string></property>
+    <property name="text"><string>Desistir</string></property>
    </widget>
    <widget class="QGraphicsView" name="graphicsView">
     <property name="geometry"><rect><x>630</x><y>160</y><width>91</width><height>541</height></rect></property>
