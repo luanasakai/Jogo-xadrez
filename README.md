@@ -10,11 +10,13 @@ Jogo de xadrez desenvolvido para a disciplina de Tópicos em Programação.
 - **PyMySQL** — conexão com o banco de dados MySQL
 
 ## 🗁 Estrutura do Projeto
+```
 Jogo-xadrez/
 ├── main/        # Lógica principal do jogo e peças
 ├── banco/       # Modelos e configuração do banco de dados
 ├── UI/          # Arquivos de interface gráfica (.ui e .py)
 └── README.md
+```
 
 ## ▶︎ Como Executar
 ```bash
