@@ -9,14 +9,14 @@ Jogo de xadrez desenvolvido para a disciplina de Tópicos em Programação.
 - **SQLAlchemy** — ORM para o banco de dados
 - **PyMySQL** — conexão com o banco de dados MySQL
 
-## 📁 Estrutura do Projeto
+## 🗄️ Estrutura do Projeto
 Jogo-xadrez/
 ├── main/        # Lógica principal do jogo e peças
 ├── banco/       # Modelos e configuração do banco de dados
 ├── UI/          # Arquivos de interface gráfica (.ui e .py)
 └── README.md
 
-## ▶️ Como Executar
+## ▶︎ Como Executar
 ```bash
 # Clone o repositório
 git clone git@github.com:luanasakai/Jogo-xadrez.git
